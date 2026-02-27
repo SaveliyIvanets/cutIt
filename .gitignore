@@ -1,0 +1,24 @@
+# Зависимости - всегда в гитигнор
+node_modules/
+
+# Файлы с конфиденциальными данными (создайте config.example.json)
+config.json
+
+# Сборка и логи
+dist/
+build/
+*.log
+npm-debug.log*
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# Тесты и покрытие
+coverage/
+.nyc_output/
+
+# Среда разработки
+.env
+.vscode/
+.idea/

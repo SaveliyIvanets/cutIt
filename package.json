@@ -1,0 +1,28 @@
+{
+  "name": "cutit",
+  "version": "1.0.0",
+  "description": "\"# cutIt\"",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaveliyIvanets/cutIt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaveliyIvanets/cutIt/issues"
+  },
+  "homepage": "https://github.com/SaveliyIvanets/cutIt#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "prettier": "^3.8.1",
+    "tsx": "^4.21.0"
+  }
+}
