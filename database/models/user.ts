@@ -1,6 +1,14 @@
 import { Model, DataTypes } from 'sequelize';
 import sequelize from '../sequelize/postgresql';
-class User extends Model {}
+import { UserCreationAttributes, UserAttributes } from '../../types/models';
+class User extends Model<UserAttributes, UserCreationAttributes> {
+  static associate(models: any) {
+    User.hasMany(models.Link, {
+      foreignKey: 'userId',
+      onDelete: 'CASCADE',
+    });
+  }
+}
 User.init(
   {
     id: {
@@ -21,3 +29,4 @@ User.init(
   },
   { sequelize, modelName: 'user' }
 );
+export default User;
